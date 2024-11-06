@@ -1,10 +1,14 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  font-weight: normal; */
   font-weight: normal;
+  display: block;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 a,
@@ -15,7 +19,23 @@ a,
   padding: 3px;
 }
 
-@media (hover: hover) {
+.fill {
+  display: block;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
@@ -32,4 +52,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */
