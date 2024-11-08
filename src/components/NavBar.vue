@@ -32,7 +32,7 @@
 		position:fixed;
 		top:0;
 		background-color: var(--nav-bar);
-		/* height: 10vh; */
+		height: 12vh;
 		width: 100%;
 	}
 	.title {

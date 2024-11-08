@@ -1,16 +1,46 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Homepage from '../components/Homepage.vue';
+import Product from '../components/Product.vue';
+import Store from '../components/Store.vue';
 
 
 const routes = [
-	// {
-	// 	path: '/',
-	// 	name: 'Default',
-	// 	meta: {
-	// 		tabName: 'Login',
-	// 		needAuth: false,
-	// 	},
-	// 	component: Login,
-	// },
+	{
+		path: '/',
+		name: 'Default',
+		meta: {
+			tabName: 'Home',
+			needAuth: false,
+		},
+		component: Homepage,
+	},
+	{
+		path: '/home',
+		name: 'Home',
+		meta: {
+			tabName: 'Home',
+			needAuth: false,
+		},
+		component: Homepage,
+	},
+	{
+		path: '/store',
+		name: 'Store',
+		meta: {
+			tabName: 'Store',
+			needAuth: false,
+		},
+		component: Store,
+	},
+	{
+		path: '/product',
+		name: 'Product',
+		meta: {
+			tabName: 'Products',
+			needAuth: false,
+		},
+		component: Product,
+	},
 ];
 
 const router = createRouter({

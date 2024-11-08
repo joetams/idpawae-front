@@ -15,6 +15,10 @@ import InputIcon from 'primevue/inputicon';
 import Badge from 'primevue/badge';
 import OverlayBadge from 'primevue/overlaybadge';
 import Avatar from 'primevue/avatar';
+import Card from 'primevue/card';
+import DataView from 'primevue/dataview';
+import SelectButton from 'primevue/selectbutton';
+import Tag from 'primevue/tag';
 
 import vue3GoogleLogin from 'vue3-google-login';
 
@@ -38,5 +42,9 @@ app.component('InputIcon', InputIcon);
 app.component('Badge', Badge);
 app.component('OverlayBadge', OverlayBadge);
 app.component('Avatar', Avatar);
+app.component('Card', Card);
+app.component('DataView', DataView);
+app.component('SelectButton', SelectButton);
+app.component('Tag', Tag);
 
 app.mount('#app')
